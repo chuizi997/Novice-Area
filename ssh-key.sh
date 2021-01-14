@@ -20,21 +20,25 @@ OTHERHOST=()
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 [ $1 ] && [ $1 = '-h' -o $1 = '--help' ]  && echo "\
 -A  --all      all host-to-all host connect
 -S  --single   host-to-all host connect [*default]
 -h  --help     print help page"
 
 echo haha
+
+
+
+#这是老师写的,可以直接用
+#IPLIST="
+#10.0.0.6
+#10.0.0.7
+#10.0.0.18
+#10.0.0.28
+#"
+#rpm -q --quiet || yum -y install sshpass  &>/dev/null
+#[ -f /root/.ssh/id_rsa ] || ssh-keygen -f /root/.ssh/id_rsa  -P ''
+#export SSHPASS=zzaa123
+#for IP in $IPLIST;do
+#	   sshpass -e ssh-copy-id -o StrictHostKeyChecking=no $IP
+#   done
