@@ -1,0 +1,17 @@
+<script type="text/javascript">
+  $(function() {
+    var wait = $(".second").html();
+      timeOut();
+         /**
+         * 实现倒计时
+         */
+       function timeOut() {
+         if(wait != 0) {
+	 setTimeout(function() {
+	 $('.second').text(--wait);
+		timeOut();
+	}, 1000);
+      }
+    }
+  });
+</script>
